@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexGuard | Contract Risk Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Background Decor (Utilizing empty space) -->
+    <img src="picture2.png" class="side-decor decor-left" alt="decor">
+    <img src="picture2.png" class="side-decor decor-right" alt="decor">
+
+    <!-- Full-Screen Hero Landing -->
+    <div id="hero-landing" class="hero-container">
+        <!-- Soft background pattern overlay -->
+        <div class="bg-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="logo" style="justify-content: flex-start; margin-bottom: 2rem;">
+                    <span class="logo-icon">🛡️</span>
+                    <h1 style="color: var(--text-main);">Lex<span class="highlight">Guard</span></h1>
+                </div>
+                <h1 class="hero-heading">Understand Your Contracts Before You Sign or Click on That "I Agree" Button
+                </h1>
+                <p class="hero-subheading">LexGuard helps entrepreneurs and SMEs identify risky clauses in agreements
+                    using NLP-driven analysis and rule-based detection.</p>
+
+                <button id="hero-cta-btn" class="hero-btn">Analyze a Contract</button>
+                <p class="hero-subtle">Built to help you read contracts like a lawyer.... without being one.</p>
+            </div>
+
+            <div class="hero-right">
+                <div class="illustration-wrapper">
+                    <img src="african_sme_owner.png" alt="SME Owner" class="hero-image">
+                    <div class="floating-tag tag-1">
+                        <span class="dot red-dot"></span> High Risk
+                    </div>
+                    <div class="floating-tag tag-2">
+                        <span class="dot yellow-dot"></span> Review Clause
+                    </div>
+                    <div class="floating-tag tag-3">
+                        <span class="dot info-dot"></span> Liability
+                    </div>
+                    <div class="glowing-screen-highlight"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Landing / Disclaimer View -->
+    <div id="landing-view" class="landing-container hidden">
+        <div class="disclaimer-banner">
+            <img src="picture1.png" alt="Overlay Background" class="banner-bg">
+            <div class="banner-overlay"></div>
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <h1 style="color: white;">Lex<span class="highlight">Guard</span></h1>
+                </div>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem;">SME Contract Risk Analyzer</p>
+            </div>
+        </div>
+        <div class="card centered-card">
+            <h2 style="margin-bottom: 1.5rem; color: var(--text-main); font-size: 1.5rem;">Disclaimer</h2>
+            <div class="disclaimer-text">
+                <p>LexGuard is a contract analysis tool designed to support users in identifying
+                    potentially important clauses within agreements.</p>
+                <p>This application does not provide legal advice and is not a substitute for a qualified legal
+                    professional.</p>
+                <p>The analysis is based on predefined rules and pattern matching, and may not detect all risks or
+                    nuances in a contract.</p>
+                <p>Users are strongly encouraged to consult a legal expert before making decisions.</p>
+                <p>LexGuard is intended to reduce cognitive load by guiding attention to important sections of a
+                    contract for further review.</p>
+            </div>
+            <button id="continue-btn" class="primary-btn"
+                style="width: 100%; margin-top: 2rem; padding: 1rem; border-radius: 8px;">
+                <span class="btn-text" style="margin: 0 auto; font-size: 1.1rem;">Continue to Analyzer</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Result Alert Modal -->
+    <div id="result-modal" class="modal hidden">
+        <div class="modal-content">
+            <div id="modal-icon" class="modal-icon"></div>
+            <h2 id="modal-title"></h2>
+            <p id="modal-message"></p>
+            <button id="modal-close-btn" class="primary-btn"
+                style="margin-top: 1.5rem; width: 100%; border-radius: 8px; padding: 0.75rem;">
+                <span class="btn-text" style="margin: 0 auto;">View Report Details</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="analyzer-view" class="hidden">
+        <header class="app-header">
+            <img src="picture2.png" alt="Header Background" class="banner-bg">
+            <div class="banner-overlay"></div>
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <h1>Lex<span class="highlight">Guard</span></h1>
+                </div>
+                <p class="subtitle">SME Contract Risk Analyzer</p>
+            </div>
+        </header>
+
+        <div class="app-container">
+            <main class="main-content">
+                <div class="editor-section">
+                    <h2>Contract Input</h2>
+
+                    <div class="upload-zone" id="upload-zone">
+                        <input type="file" id="file-input" accept=".txt,.pdf" style="display: none;">
+                        <i>📂</i>
+                        <p>Drag and drop contract here, or <span class="highlight"
+                                style="cursor: pointer; text-decoration: underline;"
+                                onclick="document.getElementById('file-input').click()">click to upload</span></p>
+                        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.5rem;">Accepts .txt and
+                            .pdf
+                        </p>
+                        <div id="file-name-display"
+                            style="margin-top: 0.5rem; font-weight: 600; color: var(--primary);">
+                        </div>
+                    </div>
+
+                    <div class="or-divider"><span>OR</span></div>
+
+                    <div class="textarea-wrapper">
+                        <textarea id="contract-text"
+                            placeholder="Paste your contract text here to analyze for risk..."></textarea>
+                        <div class="scan-line"></div>
+                    </div>
+                    <div class="actions">
+                        <button id="analyze-btn" class="primary-btn">
+                            <span class="btn-text">Analyze Contract</span>
+                            <div class="spinner highlight"></div>
+                        </button>
+                        <button id="clear-btn" class="secondary-btn">Clear</button>
+                    </div>
+                </div>
+
+                <div class="results-section">
+                    <div
+                        style="display:flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h2 style="margin:0;">Analysis Results</h2>
+                        <div style="display: flex; gap: 0.5rem;">
+                            <button id="view-chart-btn" class="secondary-btn hidden"
+                                style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">📊 View Chart</button>
+                            <button id="download-btn" class="secondary-btn hidden"
+                                style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">Download JSON</button>
+                        </div>
+                    </div>
+
+                    <div id="summary-cards" class="summary-cards hidden">
+                        <!-- Dynamic insertion here -->
+                    </div>
+
+                    <div id="clauses-container" class="clauses-container empty-state">
+                        <div class="empty-message">
+                            <i>📄</i>
+                            <p>Submit a contract to see risk analysis</p>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Chart Modal -->
+    <div id="chart-modal" class="modal hidden">
+        <div class="modal-content chart-modal-content">
+            <h2 style="margin-bottom: 1rem; color: var(--text-main);">Risk Distribution</h2>
+            <div class="chart-wrapper">
+                <canvas id="riskChart"></canvas>
+            </div>
+            <div id="chart-legend" class="chart-legend"></div>
+            <button id="chart-close-btn" class="primary-btn"
+                style="margin-top: 1.5rem; width: 100%; border-radius: 8px; padding: 0.75rem;">
+                <span class="btn-text" style="margin: 0 auto;">Close</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
