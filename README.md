@@ -2,7 +2,7 @@
 
 LexGuard is a lightweight, privacy-first contract analysis tool designed to help entrepreneurs and small businesses quickly identify potentially risky clauses in agreements.
 
-It uses rule-based pattern matching to highlight clauses related to liability, exclusivity, termination, and more — guiding users to the most important parts of a contract for further review.
+It uses rule-based pattern matching to highlight clauses related to liability, exclusivity, termination, and more; guiding users to the most important parts of a contract for further review.
 
 
 🚀 Features
@@ -50,7 +50,7 @@ Initially, TF-IDF was explored alongside rule-based detection.
 
 However:
 
-It introduced noise by flagging common words (e.g., “agreement”, “terms”)
+It introduced noise by flagging common words (e.g., “agreement”, “terms”, "use")
 
 This led to inflated and less meaningful risk scores
 
