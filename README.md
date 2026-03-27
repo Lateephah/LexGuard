@@ -76,13 +76,13 @@ Deployment: Netlify (frontend hosting)
 
 This project was built using a vibe coding / no-code assisted workflow, combining:
 
-ChatGPT
+- ChatGPT
 
-Anti Gravity AI
+- Anti Gravity AI
 
-GitHub
+- GitHub
 
-Netlify
+- Netlify
 
 
 This enabled rapid prototyping, debugging, and iteration.
@@ -101,7 +101,6 @@ Transitioning to a fully client-side architecture
 
 
 
-
 🔐 Privacy by Design
 
 LexGuard does not store or transmit contract data.
@@ -111,7 +110,6 @@ All analysis runs locally in the browser
 No database or backend storage
 
 Users maintain full control of their documents
-
 
 
 
@@ -134,7 +132,6 @@ This allows for further analysis or integration into other workflows.
 
 
 
-
 🎯 Use Cases
 
 SME contract review
@@ -151,7 +148,7 @@ Data-driven contract analysis
 
 ⚠️ Disclaimer
 
-LexGuard is an AI-assisted tool designed to support contract review.
+LexGuard is an rule-based contract analysis tool designed to support contract review.
 
 It does not provide legal advice and should not replace consultation with a qualified legal professional.
 
