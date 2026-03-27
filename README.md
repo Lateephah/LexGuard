@@ -32,11 +32,11 @@ These patterns were translated into regex-based detection rules
 
 Rules are organized into modular JSON files:
 
-rules.json
+ - rules.json
 
-severity_mapping.json
+ - severity_mapping.json
 
-warning_messages.json
+ - warning_messages.json
 
 
 
