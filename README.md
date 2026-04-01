@@ -1,25 +1,25 @@
-#🛡️ LexGuard — Contract Risk Analyzer for SMEs
+# 🛡️ LexGuard — Contract Risk Analyzer for SMEs
 
 LexGuard is a lightweight, privacy-first contract analysis tool designed to help entrepreneurs and small businesses quickly identify potentially risky clauses in agreements.
 
 It uses rule-based pattern matching to highlight clauses related to liability, exclusivity, termination, and more; guiding users to the most important parts of a contract for further review.
 
 
-🚀 Features
+## 🚀 Features
 
-🔍 Clause Detection — Identifies key legal clauses using regex-based rules
+* 🔍 **Clause Detection** — Identifies key legal clauses using regex-based rules
 
-⚠️ Risk Classification — Assigns High, Medium, Low risk levels
+* ⚠️ **Risk Classification** — Assigns High, Medium, Low risk levels
 
-💬 Contextual Warnings — Explains why a clause may be risky
+* 💬 **Contextual Warnings** — Explains why a clause may be risky
 
-📊 Visual Analysis — Displays risk distribution (chart view)
+* 📊 **Visual Analysis** — Displays risk distribution (chart view)
 
-📁 File Upload Support — Analyze .txt and .pdf contracts
+* 📁 **File Upload Support** — Analyze .txt and .pdf contracts
 
-🔐 Privacy-First — Runs entirely in the browser (no data storage)
+* 🔐 **Privacy-First** — Runs entirely in the browser (no data storage)
 
-📥 JSON Export — Download structured analysis results
+* 📥 **JSON Export** — Download structured analysis results
 
 
 🧠 Approach
