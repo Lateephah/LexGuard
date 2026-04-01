@@ -1,4 +1,4 @@
-# 🛡️ LexGuard — Contract Risk Analyzer for SMEs
+# 🛡️ **LexGuard** -  Contract Risk Analyzer for SMEs
 
 LexGuard is a lightweight, privacy-first contract analysis tool designed to help entrepreneurs and small businesses quickly identify potentially risky clauses in agreements.
 
@@ -55,7 +55,7 @@ It introduced noise by flagging common words (e.g., “agreement”, “terms”
 This led to inflated and less meaningful risk scores
 
 
-👉 The system was refined to use pure regex-based pattern matching, improving precision and interpretability.
+> 👉 The system was refined to use pure regex-based pattern matching, improving precision and interpretability.
 
 
 ## 🧩 System Design
@@ -160,12 +160,12 @@ It does not provide legal advice and should not replace consultation with a qual
   </a>
 </p>
 
-👉 Click the image above to watch the demo.
+> 👉 Click the image above to watch the demo.
 
 
 ## 🌍 Live Demo
 
-👉 https://lexguard20.netlify.app/
+> 👉 https://lexguard20.netlify.app/
 
 
 
