@@ -156,7 +156,7 @@ It does not provide legal advice and should not replace consultation with a qual
 
 <p align="center">
   <a href="https://www.linkedin.com/posts/latifah-usaini-bashir-4102ab168_buildinpublic-ai-datascience-activity-7442306518953238528-_961?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACfpDowB952onpiDYQ9xaOzua6pOcyQuZB8">
-    <img src="public/your-preview-image.png" alt="Watch Demo" width="600"/>
+    <img src="public/picture2.png" alt="Watch Demo" width="600"/>
   </a>
 </p>
 
