@@ -40,7 +40,7 @@ Rules are organized into modular JSON files:
 
 
 
-This design allows the system to be easily updated without modifying core logic.
+> This design allows the system to be easily updated without modifying core logic.
 
 
 
