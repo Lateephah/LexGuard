@@ -55,7 +55,7 @@ It introduced noise by flagging common words (e.g., “agreement”, “terms”
 This led to inflated and less meaningful risk scores
 
 
-> 👉 The system was refined to use pure regex-based pattern matching, improving precision and interpretability.
+>👉 The system was refined to use pure regex-based pattern matching, improving precision and interpretability.
 
 
 ## 🧩 System Design
