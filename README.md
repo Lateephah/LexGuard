@@ -7,22 +7,22 @@ It uses rule-based pattern matching to highlight clauses related to liability, e
 
 ## 🚀 Features
 
-* 🔍 **Clause Detection** — Identifies key legal clauses using regex-based rules
+* 🔍 **Clause Detection** : Identifies key legal clauses using regex-based rules
 
-* ⚠️ **Risk Classification** — Assigns High, Medium, Low risk levels
+* ⚠️ **Risk Classification** : Assigns High, Medium, Low risk levels
 
-* 💬 **Contextual Warnings** — Explains why a clause may be risky
+* 💬 **Contextual Warnings** : Explains why a clause may be risky
 
-* 📊 **Visual Analysis** — Displays risk distribution (chart view)
+* 📊 **Visual Analysis** : Displays risk distribution (chart view)
 
-* 📁 **File Upload Support** — Analyze .txt and .pdf contracts
+* 📁 **File Upload Support** : Analyze .txt and .pdf contracts
 
-* 🔐 **Privacy-First** — Runs entirely in the browser (no data storage)
+* 🔐 **Privacy-First** : Runs entirely in the browser (no data storage)
 
-* 📥 **JSON Export** — Download structured analysis results
+* 📥 **JSON Export** : Download structured analysis results
 
 
-🧠 Approach
+## 🧠 Approach
 
 LexGuard combines data-driven insights with rule-based NLP techniques.
 
@@ -44,7 +44,7 @@ This design allows the system to be easily updated without modifying core logic.
 
 
 
-⚙️ Key Technical Decision
+## ⚙️ Key Technical Decision
 
 Initially, TF-IDF was explored alongside rule-based detection.
 
@@ -58,21 +58,21 @@ This led to inflated and less meaningful risk scores
 👉 The system was refined to use pure regex-based pattern matching, improving precision and interpretability.
 
 
-🧩 System Design
+## 🧩 System Design
 
 LexGuard is built with a modular architecture:
 
-Frontend: HTML, CSS, JavaScript
+* Frontend: HTML, CSS, JavaScript
 
-Analysis Engine: Regex-based clause detection
+* Analysis Engine: Regex-based clause detection
 
-Data Layer: JSON-driven rules and mappings
+* Data Layer: JSON-driven rules and mappings
 
-Deployment: Netlify (frontend hosting)
+* Deployment: Netlify (frontend hosting)
 
 
 
-⚡ Development Workflow
+## ⚡ Development Workflow
 
 This project was built using a vibe coding / no-code assisted workflow, combining:
 
@@ -89,31 +89,31 @@ This enabled rapid prototyping, debugging, and iteration.
 
 
 
-🚧 Challenges & Learnings
+## 🚧 Challenges & Learnings
 
-Managing compute and model access limitations
+* Managing compute and model access limitations
 
-Adapting by switching between AI models and optimizing prompts
+* Adapting by switching between AI models and optimizing prompts
 
-Debugging deployment issues (e.g., backend limitations on Netlify)
+* Debugging deployment issues (e.g., backend limitations on Netlify)
 
-Transitioning to a fully client-side architecture
+* Transitioning to a fully client-side architecture
 
 
 
-🔐 Privacy by Design
+## 🔐 Privacy by Design
 
 LexGuard does not store or transmit contract data.
 
-All analysis runs locally in the browser
+* All analysis runs locally in the browser
 
-No database or backend storage
+* No database or backend storage
 
-Users maintain full control of their documents
+* Users maintain full control of their documents
 
 
 
-📦 Output
+## 📦 Output
 
 The system generates a structured JSON report:
 
@@ -132,20 +132,20 @@ This allows for further analysis or integration into other workflows.
 
 
 
-🎯 Use Cases
+## 🎯 Use Cases
 
-SME contract review
+* SME contract review
 
-Pre-legal review screening
+* Pre-legal review screening
 
-Legal awareness and education
+* Legal awareness and education
 
-Data-driven contract analysis
-
-
+* Data-driven contract analysis
 
 
-⚠️ Disclaimer
+
+
+## ⚠️ Disclaimer
 
 LexGuard is an rule-based contract analysis tool designed to support contract review.
 
@@ -163,14 +163,14 @@ It does not provide legal advice and should not replace consultation with a qual
 👉 Click the image above to watch the demo.
 
 
-🌍 Live Demo
+## 🌍 Live Demo
 
 👉 https://lexguard20.netlify.app/
 
 
 
 
-👩🏽‍💻 Author
+## 👩🏽‍💻 Author
 
 Latifah Bashir
 3MTT Fellow (AI/ML Track)
